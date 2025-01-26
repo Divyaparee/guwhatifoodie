@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f04e31;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #f04e31;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f04e31;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #f04e31;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c03a26;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+/* Newsletter Signup Section */
+#newsletter {
+    background-color: #f0f8ff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#newsletter h2 {
+    color: #f04e31;
+    margin-bottom: 1rem;
+}
+
+#newsletter p {
+    margin-bottom: 1.5rem;
+}
+
+#newsletter form {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#newsletter input[type="email"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#newsletter button {
+    background-color: #f04e31;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #c03a26;
+}
+/* Map Container */
+#map-container {
+    height: 400px; /* Adjust the height as needed */
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ </style>   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guwahati Food Explorer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  
+</head>
+<body>
+  
+
+    <header>
+        <h1>Guwahati Food Explorer</h1>
+        <nav>
+            <ul>
+                
+                <li><a href="#blog">Food Blog</a></li>
+                <li><a href="#recipes">Recipe Section</a></li>
+                
+                <li><a href="#events">Event Calendar</a></li>
+                <li><a href="#gallery">Photo Gallery</a></li>
+                <li><a href="#newsletter">Newsletter Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+
+    <section id="blog">
+        <h2>Food Blog</h2>
+        <article>
+            <h3>The Best Momos in Guwahati</h3>
+            <p>Discover where to find the most delicious momos in the city. From street vendors to upscale restaurants, we've got you covered.</p>
+            <a href="https://www.zomato.com/guwahati/restaurants/momos?no-bar=1&sort=best">Check out whats best for you</a>
+                
+        </article>
+        <article>
+            <h3>Exploring Traditional Assamese Thali</h3>
+            <p>Learn about the traditional Assamese thali and where to enjoy an authentic dining experience. The thali includes rice, dal, vegetables, fish or meat, and a variety of chutneys and pickles.</p>
+            <a href="https://www.swiggy.com/city/guwahati/assamese-cuisine-restaurants">Check out whats best for you</a>
+        </article>
+        <article>
+            <h3>Street Food Adventures: Pani Puri</h3>
+            <p>Join us on an adventure to find the best Pani Puri in Guwahati. This popular street food snack consists of crispy hollow puris filled with spicy and tangy water, tamarind chutney, and a mix of potatoes and chickpeas.</p>
+            <a href="https://www.justdial.com/Guwahati/Pani-Puri-Centres/nct-11380850">Check out whats best for you</a>
+        </article>
+        <!-- Add more articles here -->
+    </section>
+    
+       
+   
+
+    <section id="recipes">
+        <h2>Recipe Section</h2>
+        <article>
+            <h3>Assamese Fish Tenga</h3>
+            <p>A tangy fish curry that is a staple in Assamese cuisine. Learn how to make it with our easy-to-follow recipe.</p>
+            <ul>
+                <li>Ingredients: Fish, tomatoes, lemon, mustard seeds, and more.</li>
+                <a href="https://food.ndtv.com/recipe-masor-tenga-772664">Check out full recipe</a>
+                
+            </ul>
+            <h3>Aloo pitika</h3>
+            <p>Aloo pitika is an Indian-style mashed potato, with a spicy kick from the green and red chillis and a fresh burst of coriander and red onion</p>
+             <ul>
+                <li>Potatoes, Mustard oil, Onion, Green chili, Coriander, and Salt.</li>
+                <li>steps to make</li>
+                <li>1.Boil the potatoes until tender</li>
+                <li>2.Peel and mash the potatoes while they are still warm</li>
+                <li>3.Add the remaining ingredients and mix well</li>
+                <li>4.Serve immediately</li>
+                <li>You can also add turmeric powder. 
+                    Aloo pitika is often served with poita bhaat, which is fermented rice mixed with curd, onions, and chilies. </li>
+             </ul>
+             <h3>Khar</h3>
+             <p>Khar. One of the most unique Assamese dishes that the locals love to devour on a regular basis is Khar. It is basically a dark liquid with an astringent ...</p>
+            <ul>
+                <li>ingredients:</li>
+                <li>250 grams black gram, washed and soaked</li>
+                <li>100 grams raw papaya, cubed</li>
+                 <li>1 teaspoon grated ginger</li>   
+                 <li>2 tablespoon kolakhar</li> 
+                 <li> 2 tablespoon of mustard oil</li>  
+                  <li>Salt, to taste</li>  
+                   <li> 2 glasses water</li>
+                   <li>Method</li>
+                   <li>Pressure cook the black gram and papaya cubes with water and salt.
+                    Once the cooker loses steam, heat the wok.
+                    Add the mustard oil and bring it to the smoking point.
+                    Now add the grated ginger and fry for half a minute.
+                    Add the black gram, papaya and the khar.
+                    Bring it to a boil and then lower the flame.
+                    Cook it till you get the desired smooth texture.
+                    Adjust the salt and switch off the flame. 
+                    Serve it with freshly cooked rice.</li>
+                    </ul>
+                    <h3>baanhgajor lagot kukura</h3>
+                    <p>Baanhgajor lagot kukura is a recipe that involves chicken and bamboo shoots as the main ingredients.</p>
+                    <ul>
+                        <li>ingredients:</li>
+                        <li>1.800 gm chicken</li>
+                        <li>2.1 teaspoon coriander powder</li>
+                        <li>3. 1 teaspoon cumin powder</li>
+                        <li>4. 1/4 cup mustard oil</li>
+                        <li>5. 5 green chilli</li>
+                        <li>6. water as required</li>
+                        <li>7.  1 teaspoon garlic paste</li>
+                        <li>8. 1 teaspoon red chilli powder</li>
+                        <li>9.salt as required</li>
+                        <li>10. 1 medium onion</li>
+                        <li>11.3 tablespoon bamboo shoots</li>
+                        <li>Step 1 Wash and clean the meat
+                            To make this traditional chicken recipe, begin with washing and cleaning them the chicken. Drain the water, pat dry and marinate.</li>
+                         <li>Step 2 Marinate the chicken
+                            To marinate the chicken, make small incisions. Take a large bowl and add ginger and garlic paste, turmeric powder, coriander powder, cumin powder, salt and mustard oil, whisk nicely the mixture. Then add the chicken, marinade and coat the mixture nicely and refrigerate.</li>
+                         <Li>Step 3 Cook the chicken
+                            In the meantime, heat a pan over medium heat and add 3-4 tablespoons of mustard oil. Add the onion and chopped chilies. Once the onions and chilies turn slightly brown, add in the marinated chicken.</Li>
+                        <li>Step 4 Add bamboo shoot, simmer and enjoy with steamed rice
+                            The fry the chicken nicely. Then add in the grated bamboo shoot and season the dish with salt. Lastly, add hot water.Cover the lid and bring to a boil, let the chicken cook completely. Once the chicken turns tender. Turn off the flame and serve with steamed rice, onions and green chilies.</li>
+                        
+                        </ul>
+                        <h3>Pitha</h3>
+                        <p>Pithas are primarily made from a batter of rice flour or wheat flour, which is shaped and optionally filled with sweet or savory ingredients. When filled, the pitha's pouch is called a khol (literally "container") and the fillings are called pur.</p>
+                          <ul>
+                            <li><a href="https://beextravegant.com/til-pitha/">Check out full recipe</a></li>
+                          </ul>
+                          <h3>Xaak aru Bhaji</h3>
+                          <p> A classic Assamese dish made with vegetables and herbs, seasoned with ginger, garlic, cinnamon, onions, and sometimes lemon </p>
+                          <ul>
+                            <li>ingredients:</li>
+                            <li>Dhekia (Fiddle-head Fern) - 2-3 bunches</li>
+                            <li>1 potato ( cut into small pieces)</li>
+                            <li>1 onion (Finally chopped)</li>
+                            <li>1 tbs mustard oil</li>
+                            <li>1 tsp salt (according to your taste)</li>
+                            <li>½ tsp turmeric powder</li>
+                            <li>Method</li>
+                            <li>Wash the Dhekia xaak and chop the tender parts. keep aside</li>
+                            <li>Heat oil in  a pan.</li>
+                            <li>Add onion slices and fry them till brown in color</li>
+                            <li>Now add dhekia xaak, , potato pieces, turmeric powder and salt.</li>
+                            <li>Stir it constantly and cook for 10 minutes or till potatoes become tender.</li>
+                            <li>Its ready to serve</li>
+                          </ul>
+           
+           
+           
+           
+                        </article>
+            
+            
+        
+        <!-- More recipes can be added here -->
+    </section>
+
+   
+    
+
+
+    
+        <section id="events">
+            <h2>Event Calendar</h2>
+            <div class="calendar">
+                <div class="event">
+                    <h3>Food Festival</h3>
+                    <p>Date: January 30, 2025</p>
+                    <p>Location: Nehru Park, Guwahati</p>
+                    <p>Description: Join us for a day of delicious food, live music, and fun activities for the whole family!</p>
+                </div>
+                <div class="event">
+                    <h3>Assamese Thali Night</h3>
+                    <p>Date: February 10, 2025</p>
+                    <p>Location: Umananda Island, Guwahati</p>
+                    <p>Description: Experience the authentic flavors of Assam with a traditional thali dinner.</p>
+                </div>
+                <!-- Add more events here -->
+            </div>
+        </section>
+    </section>
+   
+
+    <section id="gallery">
+        <h2>Photo Gallery</h2>
+        <img src="maxresdefault.jpg" alt="Momos">
+        <img src="8b072511-b45e-43c0-8667-fcfbe919a519.jpeg" alt="Assamese Thali">
+        <img src="PROD_Id-617-Pitha-Platter-banner_1614795104937.jpg" alt="Pitha">
+        <img src="SAM_1128-001.JPG" alt="xaak aru bhaji">
+        <img src="doi-chira.jpg" alt="baanhgajor lagot kukura">
+    
+        <!-- More images can be added here -->
+    </section>
+
+   
+        <section id="newsletter">
+            <h2>Newsletter Signup</h2>
+            <p>Stay updated with the latest food news and events in Guwahati! Sign up for our newsletter.</p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfFQIKb9nEweAWbd7TssZSBT8yJvlLHdr41TEfwuDy32TXiTA/viewform?usp=dialog" width="640" height="480"></iframe>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        
+ 
+
+    <footer>
+        <p>&copy; 2025 Guwahati Food Explorer</p>
+    </footer>
+</body>
+</html>
